@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 hidden>{% block title %} Play Rock, Paper, Scissors {% endblock %}</h1>
+    <center>
+    <h1>Choose!</h1>
+    <a href="{{ url_for('rock') }}">
+    <img class="option" src="https://th.bing.com/th/id/R.4105eeafff25c86ca46ceb05022cfa4d?rik=I%2fykKwUcqww%2fsw&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2frock-clipart-transparent%2frock-clipart-transparent-5.png&ehk=p%2fVhblTWssuadic4aDilnAziBSS%2fVocydWU8CDkD5YI%3d&risl=&pid=ImgRaw&r=0" width="232" height="220">
+    </a>
+    <a href="{{ url_for('paper') }}">
+    <img class="option" src="https://th.bing.com/th/id/R.a991765ec0c79f8d0ac427a3e1f2d927?rik=6NrXLV87hO9Vfg&riu=http%3a%2f%2fimages.clipartpanda.com%2fpaper-clip-art-paper.png&ehk=I5keBgO9%2fF4aXpZUhNDDl%2fxLAlYXWvZPeL0vGOukCG0%3d&risl=&pid=ImgRaw&r=0" width="232" height="220">
+    </a>
+    <a href="{{ url_for('scissors') }}">
+    <img class="option" src="https://th.bing.com/th/id/R.0086a15c768538ccd61079a441a1fecc?rik=BGOe2vZqf5ZqEA&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fnTX%2fLjj%2fnTXLjj6Ec.png&ehk=OmGqBrc6XySxgesy7pZ9SP6CzN90v%2bD892Q%2bewTMJec%3d&risl=&pid=ImgRaw&r=0" width="232" height="220">
+    </a>
+    </center>
+{% endblock %}

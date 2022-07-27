@@ -1,0 +1,110 @@
+body{
+    background: rgb(255, 255, 255);
+    }
+  
+p   {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+    color: DarkSlateGray;
+    }
+h1  {
+    font-family: Verdana, sans-serif;
+    font-size: 2.5em;
+    color: FireBrick;
+    }
+    /*Nav Bar*/
+nav {
+    overflow:hidden;
+    background-color: rgb(196, 214, 255);
+    padding:2px;
+    margin:0px;
+    box-sizing: border-box;
+}
+ul  {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+li  {
+        display: inline;
+        font-size: 3em;
+        margin-left: 50px;
+        color:rgb(100, 0, 176);
+    }
+li a{
+        text-decoration: none;
+    }
+hr {
+        margin-top: 0em;
+        margin-bottom: 0em;
+        border-width: 1px;
+    }
+#limg{
+        float:left;
+        margin-left: 290px;
+    }
+#rimg{
+        float:right;
+        margin-right: 290px;
+
+    }
+      /* Aligned Text */
+#left{
+        float:left;
+   }
+#center{
+        float:left;
+        margin-left:32%;
+}
+#right{
+        float:right;
+   }
+
+   /*buttons on win, lose & draw screens*/
+.nolink{
+    text-decoration: none;
+}
+     /* link */
+a:hover {
+        color: red;
+    }
+a:active {
+        color: yellow;
+    } 
+.option{
+    border:10px dashed rgb(100, 100, 100)
+}
+.option:hover{
+    border:10px solid black
+}
+p{
+    margin: 2%;
+}
+h3{
+    font-size: 100px;
+}
+h6{
+    color:white;
+    background-color:rgb(0, 0, 255);
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 30px;
+    border:5px black solid;
+}
+
+#L{
+    float: left;
+    margin-left: 350px;
+}
+#R{
+    padding-left: 40px;
+    padding-right: 40px;
+    float: right;
+    margin-right: 350px;
+}
+h6:hover {
+    background-color: red;
+}
+h6:active {
+    color: yellow;
+} 

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 hidden>{% block title %} Play Rock, Paper, Scissors {% endblock %}</h1>
+    <center>
+    <h1>Draw!</h1>
+    <img id="limg" src="https://th.bing.com/th/id/R.a991765ec0c79f8d0ac427a3e1f2d927?rik=6NrXLV87hO9Vfg&riu=http%3a%2f%2fimages.clipartpanda.com%2fpaper-clip-art-paper.png&ehk=I5keBgO9%2fF4aXpZUhNDDl%2fxLAlYXWvZPeL0vGOukCG0%3d&risl=&pid=ImgRaw&r=0" width="232" height="220">
+    <img src="https://www.aperturelabs.biz/wp-content/uploads/2014/04/Equals.jpg" width="232" height="220">
+    <img id="rimg" src="https://th.bing.com/th/id/R.a991765ec0c79f8d0ac427a3e1f2d927?rik=6NrXLV87hO9Vfg&riu=http%3a%2f%2fimages.clipartpanda.com%2fpaper-clip-art-paper.png&ehk=I5keBgO9%2fF4aXpZUhNDDl%2fxLAlYXWvZPeL0vGOukCG0%3d&risl=&pid=ImgRaw&r=0" width="232" height="220">
+    </center>
+    <a class="nolink" href="{{ url_for('play') }}">
+        <h6 id="L">Play Again</h6>
+    </a>
+    <a class="nolink" href="{{ url_for('hello') }}">
+        <h6 id="R">Quit</h6>
+    </a>
+{% endblock %}

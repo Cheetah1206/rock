@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %} - FlaskApp</title>
+    <link rel="stylesheet" href='/static/main.css' />
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+        <span id="left">{{ utc_dt }}</span>
+        <span id="right">Rock, Paper, Scissors is a Flask web application written in Python.</span>
+        </div>
+        <br>
+        <ul>
+            <li><a href="{{ url_for('hello') }}">Home</a></li>
+            <li><a href="{{ url_for('play') }}">Play</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul>      
+    </nav>
+    <hr>    
+    <div class="content">
+        {% block content %} {% endblock %}
+    </div>
+</body>
+</html>
